@@ -78,7 +78,9 @@ export default function Navbar() {
             </div>
             <div className="border-b border-gray-300 my-4 ">
               <p className="w-[85%] md:w-[90%] py-4    ">
-                Let's build the future together
+                <span className="text-[#915BC1]">
+                  Let's build the future together
+                </span>
               </p>
             </div>
           </div>
@@ -101,7 +103,7 @@ export default function Navbar() {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#414147] ">
+              <p className="uppercase tracking-widest text-[#915BC1] ">
                 Connect with me
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%] ">
