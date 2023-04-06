@@ -1,6 +1,8 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
+import About from "./components/About";
+import Skills from "./components/Skills";
 
 export const metadata = {
   title: "Maria Reedstrom",
@@ -17,6 +19,8 @@ export default function RootLayout({
       <body>
         <Navbar />
         <Main />
+        <About />
+        <Skills />
         {children}
       </body>
     </html>
