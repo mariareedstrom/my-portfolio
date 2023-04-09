@@ -24,7 +24,6 @@ export default function RootLayout({
         <About />
         <Skills />
         <Projects />
-        <Contact />
         {children}
       </body>
     </html>
