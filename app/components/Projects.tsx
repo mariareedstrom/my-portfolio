@@ -15,22 +15,22 @@ export default function Projects() {
           <ProjectItem
             title="PostCard App"
             backgroundImg={postcardImg}
-            projectUrl="/postcard"
+            projectUrl="/projects/postcard"
           />
           <ProjectItem
             title="Your Street"
             backgroundImg={postcardImg}
-            projectUrl="/yourstreet"
+            projectUrl="/projects/yourstreet"
           />
           <ProjectItem
             title="Made For You"
             backgroundImg={postcardImg}
-            projectUrl="/madeforyou"
+            projectUrl="/projects/madeforyou"
           />
           <ProjectItem
             title="Margarita Mania"
             backgroundImg={postcardImg}
-            projectUrl="/margaritamania"
+            projectUrl="/projects/margaritamania"
           />
         </div>
       </div>
