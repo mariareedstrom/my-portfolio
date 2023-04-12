@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full lg:h-screen p-4">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#915BC1]">
           Skills
@@ -103,7 +103,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 justify-center items-center gap-4 ">
               <div className="m-auto ">
                 <Image
-                  src="/../public/images/html.png"
+                  src="/../public/images/ruby.png"
                   alt="ruby badge"
                   width={64}
                   height={64}
@@ -118,7 +118,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 justify-center items-center gap-4 ">
               <div className="m-auto ">
                 <Image
-                  src="/../public/images/html.png"
+                  src="/../public/images/rails.png"
                   alt="rails badge"
                   width={64}
                   height={64}
@@ -133,7 +133,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 justify-center items-center gap-4 ">
               <div className="m-auto ">
                 <Image
-                  src="/../public/images/html.png"
+                  src="/../public/images/materialui.png"
                   alt="materialui badge"
                   width={64}
                   height={64}
@@ -156,6 +156,21 @@ export default function Skills() {
               </div>
               <div className="flex flex-col items-center justify-center ">
                 <h3>GitHub</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 ">
+            <div className="grid grid-cols-2 justify-center items-center gap-4 ">
+              <div className="m-auto ">
+                <Image
+                  src="/../public/images/postgresql.png"
+                  alt="github badge"
+                  width={64}
+                  height={64}
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center ">
+                <h3>PostgreSQL</h3>
               </div>
             </div>
           </div>

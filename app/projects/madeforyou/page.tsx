@@ -22,7 +22,6 @@ export default function Project() {
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4 ">
-          <p>Prjoect</p>
           <h2>Overview </h2>
           <p>
             This project was created to demonstrate skills learned in the 4th

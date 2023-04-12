@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ProjectItem({ title, backgroundImg, projectUrl }) {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#915BC1] to-[#cbade7]   ">
+    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#915BC1] to-[#cbade7]   ">
       <Image
         className="rounded-xl  group-hover:opacity-10 "
         src={backgroundImg}

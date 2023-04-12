@@ -1,6 +1,5 @@
 import Image from "next/image";
 import postcardImg from "/public/images/postcard.png";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
 export default function Project() {
@@ -17,13 +16,12 @@ export default function Project() {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">PostCard App</h2>
-          <h3>React JS / Rails / Material UI</h3>
+          <h3>React JS / Rails / PostgreSQL / Material UI</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4 ">
-          <p>Prjoect</p>
-          <h2>Overview </h2>
+          <p className="uppercase tracking-widest text-[#915BC1]">Overview </p>
           <p>
             This project was created to demonstrate skills learned in the 4th
             Phase of Flatiron School's Software Development program. This
@@ -50,27 +48,7 @@ export default function Project() {
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2"></div>
-          <p className="text-center font-bold pb-2">Technologies</p>
-          <div>
-            <p className="text-gray-600 py-2 flex items-center ">
-              <RiRadioButtonFill className="pr-1" /> JavaScrpt
-            </p>
-            <p className="text-gray-600 py-2 flex items-center ">
-              <RiRadioButtonFill className="pr-1" /> React
-            </p>
-            <p className="text-gray-600 py-2 flex items-center ">
-              <RiRadioButtonFill className="pr-1" /> Ruby
-            </p>
-            <p className="text-gray-600 py-2 flex items-center ">
-              <RiRadioButtonFill className="pr-1" /> Rails
-            </p>
-            <p className="text-gray-600 py-2 flex items-center ">
-              <RiRadioButtonFill className="pr-1" /> PostgreSQL
-            </p>
-            <p className="text-gray-600 py-2 flex items-center ">
-              <RiRadioButtonFill className="pr-1" /> Material UI
-            </p>
-          </div>
+          <p className="text-center font-bold pb-2">Image here, or video?</p>
         </div>
         <Link href="/#projects ">
           <p className="underline cursor-pointer">Back</p>
