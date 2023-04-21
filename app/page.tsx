@@ -5,11 +5,11 @@ import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    <div>
+    <main className="lg:ml-8 lg:mr-8 ml-4 mr-4">
       <Main />
       <About />
       <Skills />
       <Projects />
-    </div>
+    </main>
   );
 }

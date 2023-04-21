@@ -8,6 +8,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { usePathname } from "next/navigation";
 
+import Logo from "./Logo";
+
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -53,35 +55,40 @@ export default function Navbar() {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/#home">
-          <Image
-            src="/images/MR.png"
-            alt="Maria Reedstrom"
-            width="125"
-            height="50"
-          />
+        <Link
+          href="/#home"
+          className="h-full p-2 fill-current hover:text-[#915BC1]"
+        >
+          <Logo height="100%" />
         </Link>
-        <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex  ">
-            <Link href="#home">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+        <nav>
+          <ul className="hidden md:flex  ">
+            <Link href="#home" className="hover:text-[#915BC1] hover:underline">
+              <li className="ml-10 text-sm uppercase ">Home</li>
             </Link>
-            <Link href="#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+            <Link
+              href="#about"
+              className="hover:text-[#915BC1] hover:underline"
+            >
+              <li className="ml-10 text-sm uppercase ">About</li>
             </Link>
-            <Link href="#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+            <Link
+              href="#skills"
+              className="hover:text-[#915BC1] hover:underline"
+            >
+              <li className="ml-10 text-sm uppercase ">Skills</li>
             </Link>
-            <Link href="#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Projects
-              </li>
+            <Link
+              href="#projects"
+              className="hover:text-[#915BC1] hover:underline"
+            >
+              <li className="ml-10 text-sm uppercase ">Projects</li>
             </Link>
           </ul>
           <div className="md:hidden" onClick={handleNav}>
             <AiOutlineMenu size={25} />
           </div>
-        </div>
+        </nav>
       </div>
 
       <div
@@ -98,13 +105,11 @@ export default function Navbar() {
         >
           <div>
             <div className="flex w-full items-center justify-between ">
-              <Link href="/#home">
-                <Image
-                  src="/images/MR.png"
-                  alt="Maria Reedstrom"
-                  width="87"
-                  height="35"
-                />
+              <Link
+                href="/#home"
+                className="h-full p-2 fill-current hover:text-[#915BC1]"
+              >
+                <Logo width="97" height="45" />
               </Link>
               <div
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -116,29 +121,38 @@ export default function Navbar() {
             <div className="border-b border-gray-300 my-4 ">
               <p className="w-[85%] md:w-[90%] py-4    ">
                 <span className="text-[#915BC1]">
-                  Let's build the future together
+                  Let&apos;s build the future together
                 </span>
               </p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
+              <Link href="/" className="hover:text-[#915BC1] hover:underline">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Home
                 </li>
               </Link>
-              <Link href="/#about">
+              <Link
+                href="/#about"
+                className="hover:text-[#915BC1] hover:underline"
+              >
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   About
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link
+                href="/#skills"
+                className="hover:text-[#915BC1] hover:underline"
+              >
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Skills
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link
+                href="/#projects"
+                className="hover:text-[#915BC1] hover:underline"
+              >
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects
                 </li>
@@ -154,7 +168,7 @@ export default function Navbar() {
                   href="https://www.linkedin.com/in/maria-reedstrom/"
                   rel="noopener noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:bg-[#915BC1] hover:text-[#ecf0f3] ">
                     <FaLinkedinIn />
                   </div>
                 </a>
@@ -163,7 +177,7 @@ export default function Navbar() {
                   href="https://github.com/mariareedstrom"
                   rel="noopener noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:bg-[#915BC1] hover:text-[#ecf0f3]">
                     <FaGithub />
                   </div>
                 </a>
@@ -171,11 +185,11 @@ export default function Navbar() {
                   href="mailto:maria.reedstrom@gmail.com"
                   rel="noopener noferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:bg-[#915BC1] hover:text-[#ecf0f3]">
                     <AiOutlineMail />
                   </div>
                 </a>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 ">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:bg-[#915BC1] hover:text-[#ecf0f3]">
                   <BsFillPersonLinesFill />
                 </div>
               </div>

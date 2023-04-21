@@ -1,4 +1,8 @@
 import postcardImg from "/public/images/postcard.png";
+import kittcatImg from "/public/images/Kittycat Generator Img.png";
+import margaritaImg from "/public/images/margaritamania.png";
+import yourstreetImg from "/public/images/yourStreet.png";
+import madeforyouImg from "/public/images/madeforyou1.png";
 import ProjectItem from "./ProjectItem";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -6,31 +10,41 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 export default function Projects() {
   return (
     <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16 ">
+      <div className="max-w-[960px] mx-auto px-2 py-16 ">
         <p className="text-xl tracking-widest text-[#915BC1] uppercase">
           Projects
         </p>
-        <h2 className="py-4">These Are Some Things I've Built</h2>
+        <h2 className="py-4">These Are Some Things I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8 ">
           <ProjectItem
             title="PostCard App"
             backgroundImg={postcardImg}
+            tech="React / Ruby / Rails / PostgreSQL / Material UI"
             projectUrl="/projects/postcard"
           />
           <ProjectItem
             title="Your Street"
-            backgroundImg={postcardImg}
+            backgroundImg={yourstreetImg}
+            tech="React / Ruby / Sinatra"
             projectUrl="/projects/yourstreet"
           />
           <ProjectItem
             title="Made For You"
-            backgroundImg={postcardImg}
+            backgroundImg={madeforyouImg}
+            tech="React / Ruby / Rails / PostgreSQL / Material UI"
             projectUrl="/projects/madeforyou"
           />
           <ProjectItem
             title="Margarita Mania"
-            backgroundImg={postcardImg}
+            backgroundImg={margaritaImg}
+            tech="React / JSON server"
             projectUrl="/projects/margaritamania"
+          />
+          <ProjectItem
+            title="Kitty-Cat Generator"
+            backgroundImg={kittcatImg}
+            tech="JavaScript"
+            projectUrl="/projects/kittycatgenerator"
           />
         </div>
       </div>
