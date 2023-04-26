@@ -6,33 +6,12 @@ import { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { usePathname } from "next/navigation";
-
 import Logo from "./Logo";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
-  const pathname = usePathname();
-
-  useEffect(() => {
-    if (
-      pathname === "/projects/postcard" ||
-      pathname === "/projects/madeforyou" ||
-      pathname === "/projects/yourstreet" ||
-      pathname === "/projects/margaritamania"
-    ) {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
-    } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
-    }
-  }, [pathname]);
-
-  const handleNav = () => setNav(!nav);
 
   useEffect(() => {
     const handleShadow = () => {
@@ -85,7 +64,7 @@ export default function Navbar() {
               <li className="ml-10 text-sm uppercase ">Projects</li>
             </Link>
           </ul>
-          <div className="md:hidden" onClick={handleNav}>
+          <div className="md:hidden">
             <AiOutlineMenu size={25} />
           </div>
         </nav>
@@ -111,10 +90,7 @@ export default function Navbar() {
               >
                 <Logo width="97" height="45" />
               </Link>
-              <div
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
-                onClick={handleNav}
-              >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                 <AiOutlineClose />
               </div>
             </div>

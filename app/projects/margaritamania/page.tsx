@@ -63,7 +63,7 @@ export default function Project() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <button className="px-8 py-2 mt-4 mr-8 ">Live Site</button>
+              <button className="px-8 py-2 mt-4 mr-8 ">Live site</button>
             </a>
 
             <a
@@ -71,7 +71,7 @@ export default function Project() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <button className="px-8 py-2 mt-4 mr-8 ">Video Demo</button>
+              <button className="px-8 py-2 mt-4 mr-8 ">Video demo</button>
             </a>
             <a
               href="https://github.com/mariareedstrom/Phase-2-Project-Margarita-ui"
@@ -80,10 +80,10 @@ export default function Project() {
             >
               <button className="px-8 py-2 mt-4 mr-8">Code</button>
             </a>
-            <Link href="/#projects" className="text-[#915BC1] underline ">
-              Have a look at my other projects
-            </Link>
           </nav>
+          <Link href="/#projects" className="text-[#915BC1] underline ">
+            Have a look at my other projects
+          </Link>
         </div>
       </main>
     </div>

@@ -7,11 +7,13 @@
 html {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
+  height: 100vh;
 }
 
 @layer base {
   body {
     @apply text-[#1f2937] tracking-wide;
+    @apply md:h-[100vh];
   }
 
   h1,
@@ -36,6 +38,7 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#d9bdf1] to-[#915BC1] text-white;
+    @apply shadow-sm shadow-gray-400 rounded-md text-black hover:scale-110 ease-in duration-300 
+    hover:bg-[#915BC1] hover:text-[#ecf0f3];
   }
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import profile from "/public/images/profile.jpg";
 
 export default function About() {
   return (
@@ -43,7 +44,7 @@ export default function About() {
         <div className="m-auto p-4 hover:scale-105 ease-in duration-300">
           <Image
             className="border-4 border-gray-600 rounded-full mx-auto "
-            src="/images/profile pic.jpeg"
+            src={profile}
             alt="Maria Reedstrom"
             width={300}
             height={300}
