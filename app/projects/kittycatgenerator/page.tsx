@@ -1,5 +1,5 @@
 import Image from "next/image";
-import kittyCatImg from "/public/images/kittycatgenerator.png";
+import kittyCatImg from "/public/images/kittycatgenerator.jpg";
 import Link from "next/link";
 
 export default function Project() {
