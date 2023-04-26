@@ -1,6 +1,6 @@
 import Image from "next/image";
-import madeforyou1Img from "/public/images/madeforyou1.png";
-import madeforyou2Img from "/public/images/madeforyou2.png";
+import madeforyou1Img from "/public/images/madeforyou1.jpg";
+import madeforyou2Img from "/public/images/madeforyou2.jpg";
 import Link from "next/link";
 
 export default function Project() {

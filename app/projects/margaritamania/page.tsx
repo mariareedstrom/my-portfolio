@@ -1,5 +1,5 @@
 import Image from "next/image";
-import margaritaImg from "/public/images/margaritamania.png";
+import margaritaImg from "/public/images/margaritamania.jpg";
 import Link from "next/link";
 
 export default function Project() {

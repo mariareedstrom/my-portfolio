@@ -1,8 +1,8 @@
-import postcardImg from "/public/images/postcard.png";
-import kittcatImg from "/public/images/Kittycat Generator Img.png";
-import margaritaImg from "/public/images/margaritamania.png";
-import yourstreetImg from "/public/images/yourStreet.png";
-import madeforyouImg from "/public/images/madeforyou1.png";
+import postcardImg from "/public/images/postcard.jpg";
+import kittcatImg from "/public/images/kittycatgenerator.jpg";
+import margaritaImg from "/public/images/margaritamania.jpg";
+import yourstreetImg from "/public/images/yourstreet.jpg";
+import madeforyouImg from "/public/images/madeforyou1.jpg";
 import ProjectItem from "./ProjectItem";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import yourstreetImg from "/public/images/yourStreet.png";
+import yourstreetImg from "/public/images/yourstreet.jpg";
 import Link from "next/link";
 
 export default function Project() {

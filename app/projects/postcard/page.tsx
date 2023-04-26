@@ -1,5 +1,5 @@
 import Image from "next/image";
-import postcardImg from "/public/images/postcard.png";
+import postcardImg from "/public/images/postcard.jpg";
 import Link from "next/link";
 
 export default function Project() {
