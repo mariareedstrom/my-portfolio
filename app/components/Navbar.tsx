@@ -42,27 +42,21 @@ export default function Navbar() {
         </Link>
         <nav>
           <ul className="hidden md:flex  ">
-            <Link href="#home" className="hover:text-[#915BC1] hover:underline">
+            <a href="#home" className="hover:text-[#915BC1] hover:underline">
               <li className="ml-10 text-sm uppercase ">Home</li>
-            </Link>
-            <Link
-              href="#about"
-              className="hover:text-[#915BC1] hover:underline"
-            >
+            </a>
+            <a href="#about" className="hover:text-[#915BC1] hover:underline">
               <li className="ml-10 text-sm uppercase ">About</li>
-            </Link>
-            <Link
-              href="#skills"
-              className="hover:text-[#915BC1] hover:underline"
-            >
+            </a>
+            <a href="#skills" className="hover:text-[#915BC1] hover:underline">
               <li className="ml-10 text-sm uppercase ">Skills</li>
-            </Link>
-            <Link
+            </a>
+            <a
               href="#projects"
               className="hover:text-[#915BC1] hover:underline"
             >
               <li className="ml-10 text-sm uppercase ">Projects</li>
-            </Link>
+            </a>
           </ul>
           <div className="md:hidden">
             <AiOutlineMenu size={25} />

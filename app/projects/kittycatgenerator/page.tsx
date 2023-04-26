@@ -47,6 +47,7 @@ export default function Project() {
                   href="https://robohash.org/"
                   rel="noopener noreferrer"
                   target="_blank"
+                  className="underline text-[#915BC1] "
                 >
                   Robohash.org
                 </a>
